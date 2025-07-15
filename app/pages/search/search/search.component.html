@@ -1,0 +1,16 @@
+<!-- search.component.html -->
+<form [formGroup]="searchForm" (ngSubmit)="search()">
+  <input formControlName="name" placeholder="Search by name" />
+  <input formControlName="capital" placeholder="Search by capital" />
+  <input formControlName="population" type="number" placeholder="Search by population" />
+  <button type="submit">Search</button>
+</form>
+
+<div class="search-results">
+  @for (country of countries; track country.name) {
+    <div>
+      <img [src]="country.flagUrl" width="50" />
+      <span>{{ country.name }}</span>
+    </div>
+  }
+</div>
