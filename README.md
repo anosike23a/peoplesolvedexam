@@ -190,3 +190,35 @@ src/app/
 └── app.routes.ts
 
 
+How to run the front end App
+---------------------------------
+install @Angular/Cli
+install bootstratp
+install toastr
+add these in the Angular.json file 
+ "styles": [
+              "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/global_styles.css"
+            ],
+
+            use these commands to add components
+            ng g c component name
+            ng g s service name
+            ng g guard guard name
+            ng g interceptor interceptor name
+
+then start writing the html page code
+write the scss code
+write the typescript code for each component.
+            
+
+
+
+ng new country-ui --standalone --routing --style=scss
+cd country-ui
+npm install
+ng serve
+
+
