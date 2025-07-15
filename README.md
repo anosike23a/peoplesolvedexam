@@ -163,3 +163,30 @@ Optional: Add OpenAPI bean config for metadata
 
 Optional: Add annotations for detailed API docs
 
+
+
+frontend code design 
+-------------------------
+src/app/
+│
+├── core/
+│   ├── services/
+│   │   └── country.service.ts
+│   └── models/
+│       └── country.model.ts
+│
+├── pages/
+│   ├── home/
+│   │   └── home.component.{ts,html,scss}
+│   ├── country-detail/
+│   │   └── country-detail.component.{ts,html,scss}
+│   ├── search/
+│       └── search.component.{ts,html,scss}
+│
+├── shared/
+│   └── country-card/
+│       └── country-card.component.{ts,html,scss}
+│
+└── app.routes.ts
+
+
