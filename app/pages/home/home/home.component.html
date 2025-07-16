@@ -1,9 +1,0 @@
-<!-- home.component.html -->
-<div class="country-grid">
-  @for (country of countries; track country.name) {
-    <div class="card" (click)="openCountry(country.name)">
-      <img [src]="country.flagUrl" alt="Flag of {{ country.name }}" />
-      <div class="name">{{ country.name }}</div>
-    </div>
-  }
-</div>
