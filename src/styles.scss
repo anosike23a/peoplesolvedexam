@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+// Import Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  padding-top: 56px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 72px;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 767.98px) {
+  .country-card .card-img-top {
+    height: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .country-card .card-img-top {
+    height: 120px;
+  }
+}
